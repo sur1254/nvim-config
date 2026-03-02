@@ -129,7 +129,7 @@ pip install pyright
 
 ### Clone Config
 ```bash
-git clone https://github.com/sur1254/nvim-config ~/.config/nvim
+git clone https://github.com/sur1254/nvim-config.git ~/.config/nvim
 ```
 
 ### Jalankan Neovim
