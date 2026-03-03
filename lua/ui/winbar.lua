@@ -197,7 +197,7 @@ end
 --------------------------------------------------------------------
 -- WINBAR LOGIC (persis versi pertama)
 --------------------------------------------------------------------
-_G.winbarEl_logic = function()
+_G.winbarAr_logic = function()
     if is_window_filtered() or #M.opened_items == 0 or not M.opened_items[M.current_index] then
         return ""
     end
@@ -409,7 +409,7 @@ local function update_winbar()
     if is_window_filtered() or #M.opened_items == 0 then
         vim.wo.winbar = nil
     else
-        vim.wo.winbar = "%{%v:lua.winbarEl_logic()%}"
+        vim.wo.winbar = "%{%v:lua.winbarAr_logic()%}"
     end
 end
 
